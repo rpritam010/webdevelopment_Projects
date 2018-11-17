@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <div class="full-section">
+        <div class="container">
+
+            <div class="row main">
+                <div class="col s12 m12 l8">
+                    <h3 class="header center-align">To Do List</h3>
+                    <div class="card main-card purple darken-4 z-depth-2" style="width:100%">
+                        <div class="input-group">
+                            <label for="datep">Choose A Date : </label>
+                            <input type="text" id="datep" class="datepicker white-text">
+                        </div>
+                        <div class="input-group">
+                            <label for="todoc">Enter what to do : </label>
+                            <input type="text" id="todoc" class="validate white-text">
+                        </div>
+                        <a class="btn-floating btn-large waves-effect waves-light red" id="add">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                    <ul id="todoColls" class="collection with-header z-depth-2">
+                        <li class="collection-header">
+                            <h5>Things to do <span id="gdate"></span></h5>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
